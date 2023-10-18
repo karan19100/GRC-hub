@@ -1,0 +1,75 @@
+
+<!---------------------                    Login FORM PAGE EDITING                   -------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRC Landing Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'vendors/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+  <!--------------------------------   My Navbar    ------------------------------>
+
+<body>
+    <header class="foi-header landing-header">
+        <div class="container">
+            <main class="page-auth">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <section class="auth-wrapper" style="padding-top: 30px;">
+                                <div class="row">
+                                    <div class="col-md-6 login-wrapper">
+                                        <h2 class="auth-section-title">Log In</h2>
+                                        <p class="auth-section-subtitle"></p>
+                                        <form action="/login.html" method="POST">
+                                            <div class="form-group">
+                                                <label for="email">Domain Name</label>
+                                                <input type="text" class="form-control" id="text" name="text" placeholder="Domain Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">MFA</label>
+                                                <input type="password" class="form-control" id="password" name="TOTP" placeholder="TOTP ">
+                                            </div>
+                                            <button class="btn btn-primary btn-auth-submit" type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                    <div id = "hero "class= "col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+                                        <img src="{% static 'images/hero-img.png'%}" class="vert-move" alt="app" style="margin-left: 210px;margin-top: 30px;">
+                                       </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            </div>
+            </header>
+            </body>
+
+
+
+    <script src="{% static 'vendors/jquery/animation.js'%}"></script>
+    <script src="{% static 'vendors/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendors/popper.js/popper.min.js'%}"></script>
+    <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>
+

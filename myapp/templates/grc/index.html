@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRC Dashboard page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'vendors/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+  <!--------------------------------   My Navbar    ------------------------------>
+
+<body>
+    <header class="foi-header landing-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light foi-navbar">
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'images/logo.png'%}" style="width: 90px;" alt="GRC">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'index' %}"><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="pagesMenu">
+                                <a class="dropdown-item" href="/login">Login</a>
+                                <a class="dropdown-item" href="/register">Register</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="header-content">
+                <div class="row">
+                    <div class="col-md-6 karan">
+                        <h1>Governance</h1>
+                        <h1>Risk</h1>
+                        <h1>Compliance</h1>
+                        <p class="text-dark">GRC – is a set of processes and procedures to help organizations achieve business objectives, address uncertainty, and act with integrity.</p>
+                        <a class="btn btn-primary btn-rounded getstarted scrollto" href="#services">Get Started</a>
+                    </div>
+
+                    <div class= "col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+
+                        <img src="{% static 'images/hero-img.png'%}" class="vert-move" alt="app">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--------------------------------   CART    ------------------------------>
+
+    <section id="services" class="py-5 mb-5">
+        <div class="container">
+            <h2>Services Provided by GRC</h2>
+            <p class="text-muted mb-5"> </p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/appsec.png'%}" style="width: 120px;padding-bottom: 20px;" alt="GRC">
+                            <h3>AppSec & Source </h3>
+                            <p class="mb-4">A web application for Appsec and Source code report.</p>
+                            <a class="btn btn-primary btn-rounded" href="{% url 'base' %}">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/watch_tower.png'%}" style="width: 160px;padding-bottom: 20px;" alt="GRC">
+                            <h3>WatchTower</h3>
+                            <p class="mb-4">A web application for VA and CA report extraction.</p>
+                            <a class="btn btn-primary btn-rounded" href="https://watchtower.npci.org.in/">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/asset_inventory.jpeg'%}" style="width: 190px;padding-bottom: 20px;" alt="GRC">
+                            <h3>Asset Inventory</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/asset_inventory">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/pci_dss_audit.png'%}" style="width: 125px;padding-bottom: 20px;" alt="GRC">
+                            <h3>PCI DSS</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/login">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/port_opening.svg'%}" style="width: 85px;padding-bottom: 20px;" alt="GRC">
+                            <h3>Tickets</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/login">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/ISO.png'%}" style="width: 115px;padding-bottom: 20px;" alt="GRC">
+                            <h3>ISO</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/login">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/db.png'%}" style="width: 90px;padding-bottom: 20px;" alt="GRC">
+                            <h3>DOT</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/login">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/com_2.png'%}" style="width: 140px;padding-bottom: 20px;" alt="GRC">
+                            <h3>Manual CA</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/login">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card border-primary active">
+                        <div class="card-body">
+                            <img src="{% static 'images/com_1.png'%}" style="width: 180px;padding-bottom: 20px;" alt="GRC">
+                            <h3>Compliance</h3>
+                            <p class="mb-4">Thank you for your very professional and prompt response.</p>
+                            <a class="btn btn-primary btn-rounded" href="/login">View More</a>
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------  FOOTER    ------------------------------>
+
+
+    <footer id="contact" class="foi-footer text-white">
+        <div class="container">
+            <div class="row footer-content">
+          
+                <div class="col-xl-6 col-lg-7 col-md-8">
+                    <h2 class="mb-0">Do you want to know more or just have a question? write to us.</h2>
+                </div>
+
+                <div class="col-md-4 col-lg-5 col-xl-6 py-3 py-md-0 d-md-flex align-items-center justify-content-end">
+                    <a class="btn btn-danger btn-lg" href="#" id="pagesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                    <div class="dropdown-menu" aria-labelledby="pagesMenu">
+                        <a class="dropdown-item" href="mailto:infosec@npci.org.in">infosec@npci.org.in</a>
+                        <!-- <a class="dropdown-item" href="/register">Register</a> -->
+                    </div>
+                    </div>
+                </li>
+                </div>
+
+            <div class="row footer-widget-area">
+
+                <div class="col-md-3">
+                    <div class="py-3">
+                        <img src="{% static 'images/logo.png'%}" style="width: 80px;" alt="GRC">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">Watch Tower</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">Asset Inventory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">BCMS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-3">
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">PCI DSS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">AppSec</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">Tickets</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="col-md-3 mt-3 mt-md-0">
+                    <p>
+                        &copy; NPCI.org.in 2022 Version 1.0 <a href="" target="_blank" rel="noopener noreferrer" class="text-reset"></a>.
+                    </p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'vendors/jquery/animation.js'%}"></script>
+    <script src="{% static 'vendors/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendors/popper.js/popper.min.js'%}"></script>
+    <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>
