@@ -5,7 +5,7 @@ TEXT_FILE="ports.txt"
 
 # Check if the text file exists
 if [[ ! -f $TEXT_FILE ]]; then
-  echo "Text file not found!"
+  echo "Text file not found"
   exit 1
 fi
 
